@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Azulet AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      z-index: 0;
+    }
+
+    .footer-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #0022aa;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 30px;
+      box-sizing: border-box;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      pointer-events: auto;
+    }
+
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 25px;
+      font-size: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #aaccff;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://azuletaibot.created.app/" allowfullscreen></iframe>
+
+  <div class="footer-bar">
+    <div class="footer-logo">Azulet AI</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="https://discord.gg/cHJbatcNbH" target="_blank">Discord</a>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+</body>
+</html>
