@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azulet | Background
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #0015ff;
+      height: 100%;
+      overflow: hidden;
+    }
+    .rotated-container {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      transform: rotate(10deg);
+      transform-origin: center;
+      pointer-events: none;
+    }
+    .pattern-fill {
+      width: 100%;
+      height: 100%;
+      background-color: #1a53ff;
+      animation: movePattern 30s linear infinite;
+      -webkit-mask-image: url('https://cdn.glitch.global/d475c37e-3521-4c42-a109-45561b4627eb/blooketcheckers.png?v=1748276674756');
+      -webkit-mask-repeat: repeat;
+      -webkit-mask-size: 500px 500px;
+      -webkit-mask-position: 0 0;
+      mask-image: url('https://cdn.glitch.global/d475c37e-3521-4c42-a109-45561b4627eb/blooketcheckers.png?v=1748276674756');
+      mask-repeat: repeat;
+      mask-size: 500px 500px;
+      mask-position: 0 0;
+    }
+    @keyframes movePattern {
+      0% { mask-position: 0 0; -webkit-mask-position: 0 0; }
+      100% { mask-position: 1000px 1000px; -webkit-mask-position: 1000px 1000px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="rotated-container">
+    <div class="pattern-fill"></div>
+  </div>
+</body>
+</html>
